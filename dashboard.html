@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+<body>
+    <div id="container">
+    <!-- Top Section -->
+      <div class="top">
+    <header class="top-bar">
+
+ <div class="logo">
+      <img src="icons/image.png" alt="Logo">
+    </div>
+<div class="header-content">
+      <h1>Ω Knowledge Rehab Ω</h1>
+
+      <div class="meta">
+        <span class="certified">✔ Certified</span>
+        <span class="cards">1,314 cards studied</span>
+      </div>
+
+      <div class="actions">
+        <button class="primary">STUDY</button>
+        <button class="share-button" data-tooltip="Share this class" aria-label="Share"><i class="fa-solid fa-share-nodes"></i>SHARE</button>
+        <button class="menu-button"><a href="#"><i class="fa-solid fa-ellipsis" style="font-size: 22px;"></i></a></button>
+      </div>
+    </div>
+
+    <!-- Mastery -->
+    <div class="mastery">
+      <div class="ring">
+      <pre> <span>  92%   
+Mastery</span></pre> 
+      </div>
+     
+    </div>
+    </header>
+ </div>
+
+
+    <!-- Side Section -->
+    <aside class="sidebar">
+  <!-- HEADER -->
+  <header class="sidebar-header">
+    <!--<div class="top-bar">
+      <i class="fa-solid fa-hippo"></i>
+      <i class="fa-solid fa-gear"></i>
+    </div>-->
+     <button id="sidebar-toggle">
+  ❮❮
+</button>
+
+    <div class="profile">
+      <div class="avatar"></div>
+      <h2>Hi, <span id="user-name"></span>!</h2>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <span>Days Streak</span>
+        <strong>4</strong>
+      </div>
+      <div class="stat">
+        <span>Studied Today</span>
+        <strong>--</strong>
+      </div>
+      <div class="stat">
+        <span>Avg / Day</span>
+        <strong>--</strong>
+      </div>
+      <i class="fa-solid fa-chart-column"></i>
+    </div>
+  </header>
+
+  <!-- FLASHCARD SECTION (fixed) -->
+  <section class="flashcard-bar">
+    <h3>My Flashcards (4 classes)</h3>
+
+    <div class="actions">
+      <button class="pill discover" data-tooltip="Explore classes in the marketplace" aria-label="Discover classes">Discover</button>
+      <button class="pill make" data-tooltip="Create a new class" aria-label="Make a class">Make</button>
+    </div>
+  </section>
+
+  <!-- SCROLLABLE DECKS ONLY -->
+  <section class="deck-list">
+    <!-- Decks -->
+  <div class="deck">
+    <img src="https://placekitten.com/60/60" alt="Geography">
+    <div class="deck-info">
+      <p>Geography</p>
+      <div class="progress"></div>
+    </div>
+  </div>
+
+  <div class="deck">
+    <div class="deck-icon">
+      <i class="fa-solid fa-graduation-cap"></i>
+    </div>
+    <div class="deck-info">
+      <p id="rehab">Ω Knowledge Rehab Ω <i class="fa-solid fa-circle-check"></i></p>
+      <div class="progress"></div>
+    </div>
+  </div>
+    <div class="deck"><button id="add-class">+</button><span>Add new class</span></div>
+    <div class="deck">Trending Classes</div>
+    <div class="deck">
+      <img src="images/physics.jpg" alt=""> <p>Physics</p>
+    </div>
+    <div class="deck"><img src="images/math.jpg" alt=""> <p>Math</p></div>
+    <div class="deck"><img src="images/english.jpg" alt=""> English</div>
+    <div class="deck"><img src="images/brainscape-rocket-ship.webp" alt=""> <p>Science</p></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="sidebar-footer">
+    <button class="upgrade">UPGRADE</button>
+    <i class="fa-solid fa-mobile-screen"></i>
+  </footer>
+
+</aside>
+
+ <!-- main Section -->
+  <main id="main-content">
+    <!-- classes and leaderboard selection bar -->
+  <div id="selection-bar">
+    <a href="#" id="about-link">About</a>
+    <a href="#" id="Deck-link">Decks</a>
+    <a href="#" id="leaderboard-link">Learner</a>
+  </div>
+         <section id="about-view" class="hidden1">
+    <h4 style="color:#2680aa">Headline</h4>
+    <hr>
+    <p>This class was created by Brainscape user Yeab ml.
+       Visit their profile to learn more about the creator.</p>
+
+       <h4 style="color:#2680aa">Description</h4>
+    <hr>
+    <p style="color:gray">No Description</p>
+
+    <h4 style="color:#2680aa">Purpose</h4>
+     <hr>
+    <p>School / University</p>
+
+    <h4 style="color:#2680aa">About Brainscape</h4>
+     <hr>
+    <p>Brainscape is the most efficient way to study adaptive
+       flashcards. Our unique Confidence-Based Repetition method
+        is proven by decades of cognitive science research to 
+        help you learn twice as fast, and to retain knowledge for
+         longer, than studying with traditional methods.</p>
+         <p>You can find adaptive flashcards for thousands of
+           other subjects by searching our market. And if you'd
+            like to make your own flashcards, you can feel free
+             to click the + sign in the left column of your dashboard,
+              and go nuts! Brainscape makes it easy to collaborate with
+               others and/or just to manage your own knowledge in any way
+                you choose.</p>
+         <p>However you choose to use this app, Brainscape hopes to help you Rise to Your Challenge.</p>
+
+        <iframe width="700" height="315" src="https://www.youtube.com/embed/mAxlGrrEsYs?si=3Xdp2yTyN3_Elnd7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+  </section>
+
+
+
+ <section id="deck-view">
+   
+    <div id="deck-selection">
+
+       <div class="checkall"> <input type="radio" name="deck" value="all" type="all" checked>
+        <label for="all">All</label></div>
+
+        <span class="select-buttons">
+          <button class="progressive">PROGRESSIVE</button>
+          <button class="random">RANDOM</button>
+        </span>
+    </div>
+
+    <div id="deck-list">
+  <div class="deck-item">
+
+  <!-- LEFT -->
+  <div class="deck-left">
+    <input type="checkbox" checked>
+  </div>
+
+  <!-- CENTER -->
+  <div class="deck-center">
+    <div class="deck-info1">
+      <span class="deck-percent">26%</span>
+      <span class="deck-title">Unit 1</span>
+      <span class="deck-meta">16 of 38 unique cards studied</span>
+    </div>
+
+    <div class="deck-progress">
+      <div class="deck-progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="deck-icons">
+    <i class="fa-solid fa-ellipsis"></i>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+</div>
+
+
+
+<div id="deck-list">
+  <div class="deck-item">
+
+  <!-- LEFT -->
+  <div class="deck-left">
+    <input type="checkbox" checked>
+  </div>
+
+  <!-- CENTER -->
+  <div class="deck-center">
+    <div class="deck-info1">
+      <span class="deck-percent">36%</span>
+      <span class="deck-title">Unit 2</span>
+      <span class="deck-meta">16 of 38 unique cards studied</span>
+    </div>
+
+    <div class="deck-progress">
+      <div class="deck-progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="deck-icons">
+    <i class="fa-solid fa-ellipsis"></i>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+</div>
+
+
+
+     <div id="deck-list">
+  <div class="deck-item">
+
+  <!-- LEFT -->
+  <div class="deck-left">
+    <input type="checkbox" checked>
+  </div>
+
+  <!-- CENTER -->
+  <div class="deck-center">
+    <div class="deck-info1">
+      <span class="deck-percent">28%</span>
+      <span class="deck-title">Unit 3</span>
+      <span class="deck-meta">16 of 38 unique cards studied</span>
+    </div>
+
+    <div class="deck-progress">
+      <div class="deck-progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="deck-icons">
+    <i class="fa-solid fa-ellipsis"></i>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+</div>
+
+<div id="deck-list">
+  <div class="deck-item">
+
+  <!-- LEFT -->
+  <div class="deck-left">
+    <input type="checkbox" checked>
+  </div>
+
+  <!-- CENTER -->
+  <div class="deck-center">
+    <div class="deck-info1">
+      <span class="deck-percent">23%</span>
+      <span class="deck-title">Unit 4</span>
+      <span class="deck-meta">16 of 38 unique cards studied</span>
+    </div>
+
+    <div class="deck-progress">
+      <div class="deck-progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="deck-icons">
+    <i class="fa-solid fa-ellipsis"></i>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+</div>
+
+<div id="deck-list">
+  <div class="deck-item">
+
+  <!-- LEFT -->
+  <div class="deck-left">
+    <input type="checkbox" checked>
+  </div>
+
+  <!-- CENTER -->
+  <div class="deck-center">
+    <div class="deck-info1">
+      <span class="deck-percent">26%</span>
+      <span class="deck-title">Unit 5</span>
+      <span class="deck-meta">16 of 38 unique cards studied</span>
+    </div>
+
+    <div class="deck-progress">
+      <div class="deck-progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="deck-icons">
+    <i class="fa-solid fa-ellipsis"></i>
+    <i class="fa-solid fa-play"></i>
+  </div>
+
+</div>
+
+
+    </div>
+  </section>
+
+     <section id="leaderboard-view" class="hidden1">
+
+    <div class="leaderboard-header" ">
+      <span>Learner  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+      <span>Mastery  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+      <span>Days  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+      <span>Time  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+      <span>Cards  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+      <span>Permission  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+    </div>
+    <hr style="color:lightgray">
+
+    <div class="leaderboard-row">
+      
+     
+      <span>User one&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+      <span>9.7%&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+      <span>3&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+      <span>41.3 mins&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+      <span>16 / 22&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+      <span>Full Study&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</span>
+      
+    </div>
+
+    
+  </section>
+  </main>
+
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>

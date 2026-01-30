@@ -1,12 +1,9 @@
-/* ===============================
-   FLASHCARD APP – FULL JS FILE
-   =============================== */
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  /* -------------------------------
-     1. CARD DATA (mock data)
-     ------------------------------- */
+  /*
+     1. CARD DATA (mock data) */
   const cards = [
     {
       id: 1,
