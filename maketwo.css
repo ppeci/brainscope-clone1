@@ -1,0 +1,50 @@
+*{
+  font-family: sans-serif;
+
+}
+
+h2{
+  color: #324a6b;
+  font-size: 20px;
+}
+p,span{
+    color: #7d93a4;
+ }
+
+#centering{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+
+#heaing{
+  margin: 15px;
+  display: flex;
+  justify-content: space-between; 
+align-items: center;
+
+}
+
+#learn{
+  color: #3faee3;
+  text-decoration: none;
+  text-align: left;
+}
+
+#aiCards,#typeFlash{
+    cursor: pointer;
+}
+
+#footer{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor:pointer;
+}
+
+
+
+

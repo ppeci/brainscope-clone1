@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Flashcards</title>
+<link rel="stylesheet" href="cards.css">
+</head>
+<body>
+  <div id="container">
+    <aside class="sidebar">
+  <!-- HEADER -->
+  <header class="sidebar-header">
+    <!--<div class="top-bar">
+      <i class="fa-solid fa-hippo"></i>
+      <i class="fa-solid fa-gear"></i>
+    </div>-->
+
+    <div class="profile">
+      <div class="avatar"></div>
+      <h2>Hi, <span id="user-name"></span>!</h2>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <span>Days Streak</span>
+        <strong>4</strong>
+      </div>
+      <div class="stat">
+        <span>Studied Today</span>
+        <strong>--</strong>
+      </div>
+      <div class="stat">
+        <span>Avg / Day</span>
+        <strong>--</strong>
+      </div>
+      <i class="fa-solid fa-chart-column"></i>
+    </div>
+  </header>
+
+  <!-- FLASHCARD SECTION (fixed) -->
+  <section class="flashcard-bar">
+    <h3>My Flashcards (4 classes)</h3>
+
+    <div class="actions">
+      <button class="pill discover">Discover</button>
+      <button class="pill make">Make</button>
+    </div>
+  </section>
+
+  <!-- SCROLLABLE DECKS ONLY -->
+  <section class="deck-list">
+    <!-- Decks -->
+  <div class="deck">
+    <img src="https://placekitten.com/60/60" alt="Geography">
+    <div class="deck-info">
+      <p>Geography</p>
+      <div class="progress"></div>
+    </div>
+  </div>
+
+  <div class="deck">
+    <div class="deck-icon">
+      <i class="fa-solid fa-graduation-cap"></i>
+    </div>
+    <div class="deck-info">
+      <p id="rehab">Ω Knowledge Rehab Ω <i class="fa-solid fa-circle-check"></i></p>
+      <div class="progress"></div>
+    </div>
+  </div>
+    <div class="deck"><button id="add-class">+</button><span>Add new class</span></div>
+    <div class="deck">Trending Classes</div>
+    <div class="deck">
+      <img src="images/physics.jpg" alt=""> <p>Physics</p>
+    </div>
+    <div class="deck"><img src="images/math.jpg" alt=""> <p>Math</p></div>
+    <div class="deck"><img src="images/english.jpg" alt=""> English</div>
+    <div class="deck"><img src="images/brainscape-rocket-ship.webp" alt=""> <p>Science</p></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="sidebar-footer">
+    <button class="upgrade">UPGRADE</button>
+    <i class="fa-solid fa-mobile-screen"></i>
+  </footer>
+
+</aside>
+<main id="main-content">
+<h2>Create Flashcards</h2>
+
+<div class="flashcard-input">
+  <input type="text" id="question" placeholder="Question">
+  <input type="text" id="answer" placeholder="Answer">
+  <button id="addBtn">Add</button>
+  <button id="doneBtn">Done</button>
+</div>
+
+
+</main>
+</div>
+<script src="cards.js"></script>
+</body>
+</html>

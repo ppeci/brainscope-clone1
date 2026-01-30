@@ -1,0 +1,79 @@
+*{
+  font-family: sans-serif;
+}
+
+h1{
+  color:#ffffff;
+}
+
+p, span{
+  color: #7d93a4;
+}
+
+#heaing{
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#innerTexts h1{
+  font-size: 25px;
+  font-weight: bolder;
+  color: #324a6b;
+  text-align: center;
+}
+
+#innerTexts p{
+  font-size: 16px;
+  color: #7d93a4;
+  text-align: center;
+}
+
+#textinputs,
+#textinputsTitle,
+#textinputsDes {
+  border-radius: 5px;
+  border-color: #3faee3;
+  width: 400px;
+  height: 20px;
+  padding: 10px;
+  color: #000000;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+#textinputs::placeholder, #textinputsTitle::placeholder, #textinputsDes::placeholder{
+  color: #cecece;
+}
+
+#textinputs:focus{
+  outline: none;
+}
+
+#innerTexts{
+display: block;
+
+}
+
+#create {
+  padding-left: 0;
+  text-align: center; 
+}
+
+#createSvg{
+  display: inline-block;
+}
+#footer{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor:pointer;
+}
+
+a{
+  color:#324a6b;
+  display: block;
+  text-decoration: underline;
+  text-align: center;
+}
