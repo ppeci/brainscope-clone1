@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="signup-wrapper">
+        <a href="index.html"><img src="icons/5f93252045a23abd2bb2929b16bb400d58ed0787.png" alt="Brainscape" class="logo"></a>
+        <h1>Get Started</h1>
+        <div class="options" id="socialOptions">
+            <a href="#">
+            <button class="btn social apple">
+                <span></span> CONTINUE WITH APPLE
+            </button>
+            </a>
+            <a href="#">
+            <button class="btn social google">
+                <span>G</span> CONTINUE WITH GOOGLE
+            </button>
+            </a>
+            <div class="divider">
+                <span></span>OR<span></span>
+            </div>
+            <button class="btn email" id="showEmail">CONTINUE WITH E-MAIL</button>
+        </div>
+        <form class="email-form" id="emailForm">
+            <input type="text" placeholder="First Name" id="firstName" required>
+            <input type="text" placeholder="Last Name" id="lastName" required>
+            <input type="email" placeholder="Your E-mail" id="email" required>
+            <div class="password-field">
+                <input type="password" placeholder="Your Password" id="password" required>
+                <div class="password-icons">
+                    <span class="toggle" id="togglePassword">👁</span>
+                    <span class="info">i</span>
+                    <div class="password-tooltip">
+                        <strong>Password Requirements</strong>
+                        <ul>
+                            <li>At least eight characters</li>
+                            <li>At least one uppercase letter (A-Z)</li>
+                            <li>At least one lowercase letter (a-z)</li>
+                            <li>At least one number (0-9)</li>
+                            <li>Special characters (!,@,#,$,%,^,&,*, etc.)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="btn create" type="submit">CREATE ACCOUNT</button>
+        </form>
+        <a href="login.html" class="login-link">Already have an account?</a>
+        <p class="terms">By clicking “Continue with Google”, “Continue with Apple”, or
+            “Create account” you agree to Brainscape’s <a href="terms.html">terms</a>.
+        </p>
+    </div>
+
+<script src="signup.js"></script>
+</body>
+</html>
+
