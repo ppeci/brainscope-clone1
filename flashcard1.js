@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded", () => {
 
   /* -------------------------------
@@ -152,3 +150,39 @@ overlay.addEventListener("click", () => {
   sidebar.classList.remove("active");
   overlay.classList.remove("active");
 });
+//Timer
+let counter = 0; 
+const timerDisplay = document.getElementById("timerDisplay");
+function timer() {
+  const minutes = Math.floor(counter / 60);
+  const seconds = counter % 60;
+  const seatformat = minutes + ":" + (seconds < 10 ? "0" + seconds : seconds);
+  timerDisplay.textContent = seatformat; 
+  counter++;
+  setTimeout(timer, 1000);
+}
+timer(); 
+
+//change circle color down to up
+const circles = document.querySelectorAll(".circle");
+const dots = document.querySelectorAll(".dot-progress .dot");
+let currentDot = dots.length - 1;
+circles.forEach(circle => {
+  circle.addEventListener("click", () => {
+    const circleColor = window.getComputedStyle(circle).backgroundColor;
+
+    if (currentDot >= 0) {
+      dots[currentDot].style.backgroundColor = circleColor;
+      dots[currentDot].classList.add("active");
+      currentDot--;
+    }
+  });
+});
+
+//Class name change
+const titleElement = document.getElementById("deckTitle");
+const deckTitle = localStorage.getItem("deckTitle");
+
+if (deckTitle) {
+  titleElement.textContent = deckTitle;
+}
