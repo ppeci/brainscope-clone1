@@ -1,0 +1,94 @@
+:root {
+  --progress: 9.7;
+  --size: 120px;
+  --bar-color: #fdd835;
+  --track-color: #2c3e50;
+  --bg-color: #344e6b;
+  --text-color: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.progress-wrapper {
+  margin-bottom: 2rem;
+}
+
+.progress-circle {
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--bar-color) calc(var(--progress) * 1%),
+    var(--track-color) 0
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.progress-circle::before {
+  content: "";
+  position: absolute;
+  width: calc(var(--size) - 20px);
+  height: calc(var(--size) - 20px);
+  border-radius: 50%;
+  background: var(--bg-color);
+}
+
+.progress-text {
+  position: relative;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.label {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.time {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn, .dashboard-btn {
+  background-color: #bdc3c7;
+  color: #2c3e50;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover, .dashboard-btn:hover {
+  background-color: #ecf0f1;
+}
+
