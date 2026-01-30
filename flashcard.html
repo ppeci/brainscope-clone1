@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width", initial-scale="1">
+  <title>Flashcard Dashboard</title>
+  <link rel="stylesheet" href="flashcard.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <div class="avatar"></div>
+      <img src="https://placekitten.com/80/80" class="avatar1" alt="avatar">
+      <h3>Geography</h3>
+    </div>
+
+    <div class="stats-container">
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tab active" data-tab="round">This Round</button>
+    <button class="tab" data-tab="overall">Overall</button>
+  </div>
+
+  <!-- THIS ROUND -->
+  <div class="tab-content active" id="round">
+    <div class="gauge">
+      <p class="value">Confidence Gained</p>
+      <!-- placeholder for gauge -->
+    </div>
+
+    <div class="dot-progress">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot active"></span>
+    </div>
+
+    <p class="round-time">
+      This Round:<br>
+      <strong>3:05</strong>
+    </p>
+  </div>
+
+  <!-- OVERALL -->
+  <div class="tab-content" id="overall">
+    <div class="circle-progress">
+      <p class="mastery">Mastery</p>
+      <h2>9.7%</h2>
+    </div>
+
+    <h4>Confidence Ratings</h4>
+
+    <div class="rating-row">
+      <span>New</span>
+      <div class="bar"><div class="fill new"></div></div>
+      <span>89</span>
+    </div>
+
+    <div class="rating-row">
+      <span>1</span>
+      <div class="bar"></div>
+      <span>0</span>
+    </div>
+
+    <div class="rating-row">
+      <span>2</span>
+      <div class="bar"><div class="fill orange" style="width:5%"></div></div>
+      <span>1</span>
+    </div>
+
+    <div class="rating-row">
+      <span>3</span>
+      <div class="bar"><div class="fill yellow" style="width:20%"></div></div>
+      <span>11</span>
+    </div>
+
+    <div class="rating-row">
+      <span>4</span>
+      <div class="bar"><div class="fill green" style="width:10%"></div></div>
+      <span>4</span>
+    </div>
+
+    <div class="rating-row">
+      <span>5</span>
+      <div class="bar"></div>
+      <span>0</span>
+    </div>
+
+    <p class="cards-rated">Cards rated in Round: <strong>0 / 10</strong></p>
+  </div>
+
+</div>
+
+  </aside>
+<div id="overlay" class="overlay"></div>
+
+
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+
+    <header class="top-bar">
+      <button id="menuToggle" class="hamburger">☰</button>
+      <span>Deck: Unit 1</span>
+      <span>Card:<span id="studied-card">1</span> /<span id="total-cards"></span>
+      <a href="#"> SEE ALL CARDS IN THIS DECK</a>
+    </header>
+
+    <div class="card-container">
+
+  <!-- QUESTION -->
+  <div class="card question">
+    <span class="label"></span>
+    <p></p>
+  </div>
+
+  <!-- ANSWER (hidden by default) -->
+  <div class="card answer hidden" id="answerCard">
+    <span class="label"></span>
+    <p></p>
+  </div>
+
+</div>
+
+<button id="revealBtn" class="reveal-btn">REVEAL ANSWER</button>
+
+<!-- RATING (hidden by default) -->
+<div class="rating hidden" id="rating">
+  <p>How well did you know this? <span class="help">?</span></p>
+
+  <div class="circles">
+    <div class="circle c1" data-value="1">1<br><small>Not at all</small></div>
+    <div class="circle c2" data-value="2">2</div>
+    <div class="circle c3" data-value="3">3</div>
+    <div class="circle c4" data-value="4">4</div>
+    <div class="circle c5" data-value="5">5<br><small>Perfectly</small></div>
+  </div>
+</div>
+    
+<script src="flashcard.js"></script>
+</body>
+</html>
