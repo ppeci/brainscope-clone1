@@ -136,7 +136,7 @@ const createbtn = document.getElementById('add-class');
 
   // Add new class button → go to maketwo.html
   createbtn.addEventListener('click', () => {
-    window.location.href = "maketwo.html";
+    window.location.href = "makeone.html";
   });
 
 
