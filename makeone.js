@@ -16,10 +16,10 @@ createBtn.addEventListener('click', () => {
   }
 
 //save
-  localStorage.setItem("deckTitle", className);
+  localStorage.setItem("classNames", className);
   window.location.href = 'maketwo.html';
 });
-
+s
 const exitBtn = document.getElementById('exit');
 exitBtn.addEventListener('click', () => {
   window.location.href = 'dashboard.html';
